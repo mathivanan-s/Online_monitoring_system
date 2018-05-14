@@ -1,0 +1,195 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/date"
+            android:layout_width="150dp"
+            android:layout_height="32dp"
+            android:background="@color/DarkGray"
+            android:hint="Select Date..."
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+        <Spinner
+            android:id="@+id/shift_select_spinner"
+            android:layout_width="90dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/date"
+            android:layout_toEndOf="@+id/date"
+            android:layout_marginLeft="10dp" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:text="view"
+            android:layout_marginTop="2dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/date_wise_view"
+            android:background="@drawable/new_button"
+            android:paddingBottom="2dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/shift_select_spinner"
+            android:layout_toEndOf="@+id/shift_select_spinner"
+            android:layout_marginLeft="15dp" />
+        <TextView
+            android:id="@+id/select_date"
+            android:layout_width="100dp"
+            android:background="@color/colorPrimary"
+            android:layout_height="20dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text=""
+            android:layout_toRightOf="@+id/name_select_date"
+            android:layout_toEndOf="@+id/name_select_date"
+            android:layout_below="@+id/date" />
+        <TextView
+            android:id="@+id/name_select_date"
+            android:layout_width="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/border"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="5dp"
+            android:text="DATE"
+            android:layout_below="@+id/date"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp" />
+        <TextView
+            android:id="@+id/name_select_shift"
+            android:layout_width="50dp"
+            android:textColor="@color/colorPrimaryDark"
+            android:background="@drawable/border"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_height="20dp"
+            android:text="SHIFT"
+            android:layout_below="@+id/shift_select_spinner"
+            android:layout_toRightOf="@+id/select_date"
+            android:layout_toEndOf="@+id/select_date"
+            android:layout_marginLeft="10dp" />
+        <TextView
+            android:id="@+id/select_shift"
+            android:layout_width="37dp"
+            android:layout_height="20dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text=""
+            android:layout_alignBottom="@+id/select_date"
+            android:layout_toRightOf="@+id/name_select_shift"
+            android:layout_toEndOf="@+id/name_select_shift" />
+
+    </RelativeLayout>
+
+
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="34dp"
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusableInTouchMode="true"
+                android:focusable="true">
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:id="@+id/zoom"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <Button
+            android:text="Zoom Out"
+            android:textSize="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:id="@+id/buttonZoomOut"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+        <Button
+            android:text="Normal"
+            android:id="@+id/buttonNormal"
+            android:layout_width="wrap_content"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@+id/buttonZoomOut"
+            android:layout_toEndOf="@+id/buttonZoomOut" />
+
+        <ImageButton
+            android:id="@+id/print_fab"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/ic_insert_csv" />
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+

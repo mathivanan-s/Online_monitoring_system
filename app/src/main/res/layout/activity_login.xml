@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginb"
+    tools:context="com.lakshmiindustrialautomation.www.lit.LoginActivity" >
+
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext_shape"
+        android:drawableLeft="@drawable/ic_user"
+        android:paddingLeft="4dp"
+        android:id="@+id/user_id_textbox"
+        android:hint="User Id"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/logo_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp" />
+
+    <EditText
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_edittext_shape"
+        android:drawableLeft="@drawable/ic_password"
+        android:paddingLeft="4dp"
+        android:id="@+id/password_textbox"
+        android:hint="Password"
+        android:layout_below="@+id/user_id_textbox"
+        android:layout_alignLeft="@+id/user_id_textbox"
+        android:layout_alignStart="@+id/user_id_textbox"
+        android:layout_marginTop="35dp"
+        android:inputType="textPassword"/>
+
+    <requestFocus/>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:text="Login"
+        android:id="@+id/login_button"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/new_button"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:layout_marginTop="78dp"
+        android:layout_below="@+id/password_textbox"
+        android:layout_alignRight="@+id/password_textbox"
+        android:layout_alignEnd="@+id/password_textbox"
+        android:layout_alignLeft="@+id/password_textbox"
+        android:layout_alignStart="@+id/password_textbox" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:id="@+id/offline_radio_button"
+        android:layout_height="wrap_content"
+        android:buttonTint="#fff"
+        android:text="@string/offline_radio_text"
+        android:textColor="#fff"
+        android:checked="true"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/password_textbox"
+        android:layout_alignLeft="@+id/login_button"
+        android:layout_alignStart="@+id/login_button" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:id="@+id/online_radio_button"
+        android:layout_height="wrap_content"
+        android:buttonTint="#fff"
+        android:text="@string/online_radio_text"
+        android:textColor="#fff"
+        android:layout_alignBaseline="@+id/offline_radio_button"
+        android:layout_alignBottom="@+id/offline_radio_button"
+        android:layout_alignRight="@+id/login_button"
+        android:layout_alignEnd="@+id/login_button" />
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="250dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/logo_01"
+        android:layout_marginBottom="17dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <ImageButton
+        android:id="@+id/ip_settings"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/settings"
+        android:layout_alignTop="@+id/logo_image"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        app:srcCompat="@drawable/online"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="38dp"
+        android:layout_below="@+id/ip_settings"
+        android:layout_alignLeft="@+id/logo_image"
+        android:layout_alignStart="@+id/logo_image" />
+
+
+
+</RelativeLayout>

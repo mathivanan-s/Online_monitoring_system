@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LIT</string>
+    <string name="title_activity_main">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_settings">Settings</string>
+    <string name="stoppage_alert_button_text">Stoppage Alerts</string>
+    <string name="normal_alert_button_text">Normal Alerts</string>
+    <string name="title_activity_normal_alerts_list">Normal Alerts List</string>
+    <string name="title_activity_stoppage_alerts">Stoppage Alerts List</string>
+    <string name="network_switch_button_offline_state_text">Local</string>
+    <string name="network_switch_button_online_state_text">Static</string>
+    <string name="feed_alert_ringtone">Notification Tone</string>
+    <string name="online_radio_text">Online</string>
+    <string name="offline_radio_text">Offline</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_live">LiveActivity</string>
+    <string name="title_activity_chat">ChatActivity</string>
+    <string-array name="list_items">
+        <item>mathi 99</item>
+        <item>mathjji 99</item>
+        <item>mathrjji 99</item>
+        <item>mathhgfji 99</item>
+
+    </string-array>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="configure">Configure</string>
+    <string name="add_widget">Add widget</string>
+</resources>

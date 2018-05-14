@@ -1,0 +1,20 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<Preference
+    android:title="PREFERENCE"
+    android:icon="@drawable/ic_menu_manage"/>
+
+<PreferenceCategory android:title="IP SETTINGS PREFERENCE"/>
+
+    <EditTextPreference
+    android:key="static_ip"
+    android:selectAllOnFocus="true"
+    android:singleLine="true"
+    android:title="Enter Your Static IP" />
+
+    <EditTextPreference
+    android:key="local_ip"
+    android:selectAllOnFocus="true"
+    android:singleLine="true"
+    android:title="Enter Your Local IP" />
+
+</PreferenceScreen>

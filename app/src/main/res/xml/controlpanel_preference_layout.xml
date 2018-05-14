@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@color/colorPrimary"
+    >
+    <PreferenceCategory
+        android:title="Preference category">
+
+        <RingtonePreference
+            android:title="Choose Notification Tone"
+            android:defaultValue="content://settings/system/notification_sound"
+            android:key="alert_tone"
+            android:ringtoneType="ringtone|notification|alarm|all"
+            android:summary="Can select new notification tone" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="is_normal_notification_vibrate_enabled"
+            android:summary=""
+            android:title="Vibrate for Normal Notification" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="is_stoppage_notification_vibrate_enabled"
+            android:summary=""
+            android:title="Vibrate for Stoppage Notification" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Drawer Menu Preference"
+        android:summary="Selected menu options will shown in drawer menu">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="single_sheet"
+            android:summary=""
+            android:title="Single Sheet" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="year_chart"
+            android:summary=""
+            android:title="Year Chart" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="month_chart"
+            android:summary=""
+            android:title="Month Chart" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="stop_chart"
+            android:summary=""
+            android:title="Stop Chart" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="running_shift_report"
+            android:summary=""
+            android:title="Running Shift Report" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="machine_wise_month_chart"
+            android:summary=""
+            android:title="Machine Wise Month Chart" />
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="date_wise_production_report"
+            android:summary=""
+            android:title="Date Wise Production Report" />
+
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="efficiency_color_settings"
+            android:summary=""
+            android:title="Efficiency Color Settings" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="cmpx"
+            android:summary=""
+            android:title="Show Cmpx/K.Meter" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

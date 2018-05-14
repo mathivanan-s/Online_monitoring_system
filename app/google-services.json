@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "344009842893",
+    "firebase_url": "https://chatfcm-1c96c.firebaseio.com",
+    "project_id": "chatfcm-1c96c",
+    "storage_bucket": "chatfcm-1c96c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:344009842893:android:baba53e6b5fbf695",
+        "android_client_info": {
+          "package_name": "com.lakshmiindustrialautomation.www.lit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "344009842893-ctv9dbh7fn5b2gcfcps0nv2krtm0tog6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.lakshmiindustrialautomation.www.lit",
+            "certificate_hash": "f431aa4068957603dc788eeb5c7c08e8c0e2ad60"
+          }
+        },
+        {
+          "client_id": "344009842893-4jksu2vi9am8u3eb7qns1eo13re0men8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb624R-YGfEdfsWEvb7KBAH0LleiJPub8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "344009842893-4jksu2vi9am8u3eb7qns1eo13re0men8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="100"
+        android:title="@string/normal_alert_button_text"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_stoppage_alert"
+        android:icon="@drawable/stop_read"
+        android:orderInCategory="100"
+        android:title="@string/stoppage_alert_button_text"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_normal_alert"
+        android:icon="@drawable/normal_read"
+        android:orderInCategory="100"
+        android:title="@string/normal_alert_button_text"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/logout" />
+
+</menu>

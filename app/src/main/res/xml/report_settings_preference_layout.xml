@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:icon="@color/colorPrimary">
+    <PreferenceCategory
+        android:title="Production Report Fields Preference"
+        android:summary="Selected menu options will shown in production report">
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="a_eff"
+            android:summary=""
+            android:title="Actual Efficency" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="p_eff"
+            android:summary=""
+            android:title="Production Efficency" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="picks"
+            android:summary=""
+            android:title="K.picks" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="meter"
+            android:summary=""
+            android:title="Meter" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="rpm"
+            android:summary=""
+            android:title="Rpm" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="warp"
+            android:summary=""
+            android:title="Warp" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="warp_time"
+            android:summary=""
+            android:title="Warp Time" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="weft"
+            android:summary=""
+            android:title="Weft" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="weft_time"
+            android:summary=""
+            android:title="Weft Time" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="short_stop"
+            android:summary=""
+            android:title="Short Stop" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="short_stop_time"
+            android:summary=""
+            android:title="Short Stop Time" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="long_stop"
+            android:summary=""
+            android:title="Long Stop" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="long_stop_time"
+            android:summary=""
+            android:title="Long Stop Time" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="other_stop"
+            android:summary=""
+            android:title="Other Stop" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="other_stop_time"
+            android:summary=""
+            android:title="Other Stop Time" />
+
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="run_time"
+            android:summary=""
+            android:title="Running Time" />
+
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

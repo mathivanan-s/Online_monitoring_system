@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Monitoring"
+        android:id="@+id/tit_monitoring">
+        <menu>
+            <group android:checkableBehavior="all">
+                <item
+                android:id="@+id/nav_single_sheet"
+                android:icon="@drawable/ic_grid"
+                android:title="Single Sheet " />
+
+                <item
+                    android:id="@+id/shed_and_machine"
+                    android:icon="@drawable/ic_grid"
+                    android:title="Shed and Machine " />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:title="Chart"
+        android:id="@+id/tit_chart">
+        <menu>
+            <group android:checkableBehavior="all">
+                <item
+                    android:id="@+id/nav_month_chart"
+                    android:icon="@drawable/ic_month_chart"
+                    android:title="Month Chart" />
+                <item
+                    android:id="@+id/nav_machine_wise_month_chart"
+                    android:icon="@drawable/ic_assessment"
+                    android:title="Machine Wise Month Chart" />
+                <item
+                    android:id="@+id/nav_year_chart"
+                    android:icon="@drawable/ic_pie_chart"
+                    android:title="Year Chart" />
+                <item
+                    android:id="@+id/nav_stoppage_chart"
+                    android:icon="@drawable/ic_stop"
+                    android:title="Stoppage Chart" />
+            </group>
+        </menu>
+    </item>
+    <item
+
+        android:title="Report"
+        android:checkableBehavior="all"
+        android:id="@+id/tit_report">
+        <menu>
+            <group android:checkableBehavior="all" >
+                <item
+                    android:id="@+id/nav_running_shift_report"
+                    android:icon="@drawable/ic_report"
+                    android:title="Running Shift Report" />
+                <item
+                    android:id="@+id/nav_date_wise_production_report"
+                    android:icon="@drawable/ic_date_wise_report"
+                    android:title="Date Wise Production Report" />
+
+            </group>
+        </menu>
+    </item>
+    <item
+
+        android:title="Settings"
+        android:checkableBehavior="all"
+        android:id="@+id/tit_settings">
+        <menu>
+            <group android:checkableBehavior="all" >
+
+                <item
+                    android:id="@+id/nav_single_sheet_color_settings"
+                    android:icon="@drawable/ic_chat"
+                    android:title="Efficiency Color Settings" />
+                <item
+                    android:id="@+id/nav_production_report_settings"
+                    android:icon="@drawable/ic_report_settings"
+                    android:title="Report Settings" />
+            </group>
+        </menu>
+    </item>
+</menu>
+
+
